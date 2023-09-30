@@ -1,0 +1,30 @@
+.slide-btns {
+    position: absolute;
+    left: 800px;
+    font-family: "Linearicons-Free"
+}
+
+
+.slide-btns-size {
+    cursor: pointer; 
+    background-color: transparent;
+    border: 0px;
+    font-size: 60px;
+}
+
+.left {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    bottom: 600px;
+    left: 40px;
+}
+
+.right {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    bottom: 600px;
+    left: 1410px;
+    margin-bottom: auto;
+}

@@ -1,0 +1,94 @@
+
+
+/*          TO CONTROL AND ADJUST THE TABLE SIZES */
+
+
+.grid_tables {
+    
+    display: grid;
+    grid-template-columns: 22.5vw 22.5vw 22.5vw;  
+    gap: 20px 70px;
+}
+
+.grid_tables-item {
+    display: grid;
+    grid-template-columns: 105px 300px;
+}
+
+
+/*          TO CONTROL AND AJDUST THE TEXT INSIDE THE TABLE*/
+
+
+
+.table_inside_content {
+    margin-bottom: 30px;
+    margin-left: 15px;
+    text-align: start;
+}
+
+.table_a_title {
+    font-size: 20px;
+    color: black;
+    overflow: auto;
+   flex-wrap: wrap;
+}
+
+.table_a_title:hover {
+    color: #f9b707;
+}
+
+
+/*          TO CONTROL AND ADJUST THE ICON       */
+
+.orange_ball {
+    display: flex;
+    justify-content: center;
+}
+
+.background_animation::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    transition: .3s;
+    z-index: 2;
+    transform: translateX(-100%);
+    border-radius: 50%;
+    background: #272727;
+}
+
+.background_animation:hover:after {
+    transform: translateX(0%);
+}
+
+.background_animation::before {
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    left: 30px;
+    color: white;
+}
+
+.background_animation:hover:before {
+    position: absolute;
+    bottom: 100px;
+    color: white;
+}
+
+.background_animation {
+    z-index: 1;
+    overflow: hidden;
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    font-size: 44px;
+    margin-bottom: 10px;
+    background-color: #f9b707;
+    border-radius: 50%;
+}
+
+
+.icon {
+    font-family: 'Linearicons-Free';
+}

@@ -1,0 +1,31 @@
+.table_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0px;
+}
+
+.grid_tables-item {
+    position: relative;
+    right: 20px;
+}
+
+
+.heading_decorated {
+    font-size: 28px;
+    position: relative;
+    bottom: 30px;
+}
+
+.heading_decorated::before {
+    content: ' ';
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background: #f9b707;
+}

@@ -1,0 +1,43 @@
+
+.slide_content {
+    width: 100vw;
+    height: 880px;
+    background-color: inherit;
+    display: flex;
+}
+
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+}
+
+.swiper-pagination-bullet {
+    position: relative;
+    bottom: 50px;
+    z-index: 3;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: green !important;
+    opacity: 50% !important;
+    transition: 10.33 color !important;
+}
+
+
+.swiper-pagination-bullet-active:hover {
+    background-color: green;
+    opacity: 100!important;
+}
+
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
+    background-color: green !important;
+    opacity: 100 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: green!important;
+    opacity: 100!important;
+}

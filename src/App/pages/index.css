@@ -1,0 +1,19 @@
+.app {
+    z-index: 1;
+    background-color: white;
+}
+
+
+
+h6 {
+   font-size: 38px; 
+    font-weight: 400;
+    letter-spacing: .06rem;
+    color: #333;
+    text-transform: uppercase;
+} 
+
+ul {
+    padding: 0px;
+}
+

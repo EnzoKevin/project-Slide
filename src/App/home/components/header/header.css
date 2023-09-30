@@ -1,0 +1,58 @@
+.header {
+    color: aqua;
+    justify-content: space-between;
+}
+
+.header_imgs {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px 150px;
+    justify-content: center;
+    background-color: burlywood;
+}
+
+.Logo {
+    color: aqua;
+}
+
+.navigation {
+    display: grid;
+    background-color: rgb(133, 130, 130)
+}
+
+.header_navigation_ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8vw;
+    padding-right: 25px;
+}
+
+.header_navigation_ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-btn {
+    border: none;
+    background: none;
+    font: inherit;
+    outline: inherit;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.nav-list li{
+    display: inline;
+    list-style: none;
+    
+}
+
+.logo_header {
+    width: 245px;
+    height:70px;
+}
+
+.nav-Link {
+    color: black;
+}

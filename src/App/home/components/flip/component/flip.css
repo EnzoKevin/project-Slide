@@ -1,0 +1,151 @@
+
+/* flip effect */
+
+.flip_box {
+    background-color: transparent;
+    width: 384px;
+    height: 360px;
+    perspective: 1000px;
+    color: white;
+  }
+  
+  .flip_box_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip_box:hover .flip_box_inner {
+    transform: rotateY(-180deg);
+  }
+  
+  .flip_box_front, .flip_box_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip_box_back {   
+    transform: rotateY(180deg);
+  }
+  
+
+  /* flip elements that i got to adjust */
+
+
+
+/* front text align */
+
+.front_flip_align {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.flip_title {
+  position: relative;
+  bottom: 50px;
+}
+
+.flip_text_align {
+  margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(60px);
+}
+
+.flip_text_align::before {
+  content: " ";
+}
+
+/* back text align */
+
+.flip_back_text_align {
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateZ(60px);
+}
+
+.flip_align_p {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} 
+
+
+/* img align */
+
+  .flip_img {
+    filter: brightness(63%);
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .flip_img2{
+    filter: brightness(33%);
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* button align and editing */
+
+  .flip_link {
+    text-decoration: none;
+    color: white;
+  }
+
+  .flip_link:hover {
+   color:  #f9b707;
+    
+  }
+
+  a {
+    text-decoration: none;
+    transition: .33s all ease
+  }
+
+  .flip_btn_link {
+    cursor: pointer;
+    background: transparent;
+    border: 0px;
+  }
+
+  .flip_btn_link a {
+    text-decoration: underline;
+    transition: .33 all ease;
+    color: white;
+  }
+
+  .flip_btn_link a:hover {
+    color:  #f9b707;
+    text-decoration: none;
+  }
+  
+
+
+
+  /* align text and making the blackground a little bit darker */
+
+

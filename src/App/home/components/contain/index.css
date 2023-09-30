@@ -1,0 +1,5 @@
+.contain_comp {
+    display: flex;
+    justify-content: center;
+    padding: 90px 0px;
+}
